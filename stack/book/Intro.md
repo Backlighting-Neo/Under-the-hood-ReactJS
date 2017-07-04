@@ -1,19 +1,19 @@
-## Intro
+## 简介
 
-### Scheme, first look
+### 首先说明图例
 
 
 [![](../images/intro/all-page-stack-reconciler-25-scale.jpg)](../images/intro/all-page-stack-reconciler.svg)
 
-<em>Intro.0 All scheme (clickable)</em>
+<em>简介.0 全图 (点击看大图)</em>
 
-So.. have a look. Take your time. Of course, overall it looks complex, but in fact, it describes only two processes: mount and update. I skip unmount because it’s kind of ‘reversed mount’, so, I’ve just decided to simplify scheme. Also, in fact, **this is not 100%** match of code, but just major pieces which describe the architecture, so, it’s rather 60% of the code, but other 40% in fact almost don’t bring any value, so, I omitted them to make it simple.
+恩……我知道，这个图第一次看起来显得非常复杂，但事实上，它只描述了两个流程：挂载(mount)和更新(update)。我跳过了卸载(unmount)因为它可以看做挂载的一种逆过程。所以，我简化了图例。即使是这样，**这张图上并没有100%的**的匹配所有React源代码，但是主要的结构都描述清楚了。这里大概描述了60%的代码，剩下的部分并没有什么价值，所以我为了简化忽略了他们。
 
-Alright, probably you have already noticed many colors on the scheme, each logic item (shape on the scheme) is highlighted in parent module color, it means, for example, ‘methodA’ will be red if it’s called from ‘moduleB’ which is red. Let’s see modules legend for the scheme, it describes module color and path to the file as well.
+你应该已经注意到每个图例上有不同的颜色，每个逻辑块（看形状）的颜色取决于他父模块的颜色，比如说，‘模块A’是‘模块B’调用的，如果模块B是红色的，那么模块A就也是红色的。下面列出了所有模块对应的文件的颜色：
 
 [![](https://rawgit.com/Bogdan-Lyashenko/Under-the-hood-ReactJS/7c2372e1/stack/images/intro/modules-src-path.svg)](https://rawgit.com/Bogdan-Lyashenko/Under-the-hood-ReactJS/7c2372e1/stack/images/intro/modules-src-path.svg)
 
-<em>Intro.1 Modules colors (clickable)</em>
+<em>简介.1 模块颜色 (点击看大图)</em>
 
 Let’s put them into a scheme to see **dependencies between modules**.
 
